@@ -1,3 +1,4 @@
+import ExternalLink from "./ExternalLink";
 import Titles from "./titles";
 
 const Work = () => {
@@ -22,6 +23,7 @@ const Work = () => {
             <Titles />
             <Titles />
           </div>
+          <ExternalLink />
         </div>
       </div>
     </>
