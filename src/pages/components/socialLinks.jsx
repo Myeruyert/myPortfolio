@@ -4,7 +4,7 @@ import { FaFigma } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
-    <div className="flex mr-1.5">
+    <div className="flex mr-1.5 text-2xl text-gray-600">
       <VscGithubAlt className="mr-1.5" />
       <TfiTwitter className="mr-1.5" />
       <FaFigma />
