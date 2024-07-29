@@ -1,12 +1,18 @@
 import Paragraphs from "./paragraphs";
 import Titles from "./titles";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <>
-      <div className="AboutMe">
-        <div className="py-24">
-          <div className="m-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="AboutMe"
+      >
+        <div className="AboutMeWidth py-24">
+          <div className="flex justify-center">
             <Titles title="About Me" />
           </div>
           <div className="flex justify-between mx-8 mt-12">
@@ -31,7 +37,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

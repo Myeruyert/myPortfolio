@@ -10,9 +10,15 @@ body {
 
 header,
 section,
-.AboutMe, 
-.skills {
-  padding: 0 80px;
+.AboutMeWidth,
+.skills,
+.experienceWidth,
+.work,
+.footer,
+.copyrightWidth {
+  /* padding: 0 80px; */
+  width: 80%;
+  margin: auto;
 }
 
 p,
@@ -27,7 +33,9 @@ li {
   border: 10px solid white;
 }
 
-.AboutMe, .copyright, .experience {
+.AboutMe,
+.copyright,
+.experience {
   background-color: #f9fafb;
 }
 
@@ -45,54 +53,49 @@ li {
 }
 
 .jslogo {
-  color:
-   #ffd600;
+  color: #ffd600;
 }
 
 .tslogo {
-  color: #3178C6;
+  color: #3178c6;
 }
 
 .reactlogo {
-  color: #087EA4
+  color: #087ea4;
 }
 
 .postgre {
-  color:  #0064a5
+  color: #0064a5;
 }
 
 .nodelogo {
-  color: #5FA04E
+  color: #5fa04e;
 }
 
 .nestlogo {
-  color: #E0234E
+  color: #e0234e;
 }
 
 .mongologo {
-  color: #00684A;
+  color: #00684a;
 }
 
 .sasslogo {
-  color: #F06292
+  color: #f06292;
 }
 
 .tailwindlogo {
-  color: #38BDF8
+  color: #38bdf8;
 }
 
 .figmalogo {
-  color: #A259FF
+  color: #a259ff;
 }
 
 .storybooklogo {
-  color: #FF4081;
+  color: #ff4081;
 }
 
 .gitlogo {
-  color: #F4511E
-} 
-
-.foot {
-  margin: auto;
+  color: #f4511e;
 }

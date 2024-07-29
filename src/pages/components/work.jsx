@@ -1,10 +1,23 @@
 import ExternalLink from "./ExternalLink";
 import Titles from "./titles";
 
+const titles = [
+  { title: "React" },
+  { title: "Next.js" },
+  { title: "Typescript" },
+  { title: "Nest.js" },
+  { title: "PostgreSQL" },
+  { title: "Tailwindcss" },
+  { title: "Figma" },
+  { title: "Cypress" },
+  { title: "Storybook" },
+  { title: "Git" },
+];
+
 const Work = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex border-x border-b rounded-lg drop-shadow-md">
         <div className="image bg-gray-100 w-1/2">
           <img
             className="p-12 rounded-xl"
@@ -20,18 +33,11 @@ const Work = () => {
             faucibus orci luctus et ultrices posuere cubilia curae.
           </p>
           <div className="flex flex-wrap gap-2 font-medium">
-            <Titles title="React"/>
-            <Titles title="Next.js"/>
-            <Titles title="Typescript"/>
-            <Titles title="Nest.js"/>
-            <Titles title="PostgreSQL"/>
-            <Titles title="Tailwindcss"/>
-            <Titles title="Figma"/>
-            <Titles title="Cypress"/>
-            <Titles title="Storybook"/>
-            <Titles title="Git"/>
+            {titles?.map((titleOne, i) => (
+              <Titles key={i} title={titleOne.title} />
+            ))}
           </div>
-          <ExternalLink/>
+          <ExternalLink />
         </div>
       </div>
     </>
